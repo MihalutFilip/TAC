@@ -1,0 +1,19 @@
+﻿@{
+    Layout = null;
+}
+
+<!-- [Featured Events] -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            @Html.Sitecore().DynamicPlaceholder("feature-left")
+        </div>
+        <div class="col-sm-4">
+            @Html.Sitecore().DynamicPlaceholder("feature-middle")
+        </div>
+        <div class="col-sm-4">
+            @Html.Sitecore().DynamicPlaceholder("feature-right")
+        </div>
+    </div>
+</div>
+<!-- [/Featured Events] -->

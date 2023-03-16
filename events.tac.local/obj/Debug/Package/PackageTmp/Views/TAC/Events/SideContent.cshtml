@@ -1,0 +1,35 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <!-- [Page Navigation] -->
+    <h4><a href="Event-Categories.html">Events</a></h4>
+    @Html.Sitecore().Placeholder("navigationMenu")
+    <!-- [/Page Navigation] -->
+    <!-- [Related Events] -->
+    @Html.Sitecore().Placeholder("relatedEventsNavigation")
+    <!-- [/Related Events] -->
+    <!-- [Subscribe to mailing list] -->
+    <div class="side-widget">
+        <h4 class="text-uppercase">Our next events</h4>
+        <div class="sidebar">
+            <div class="text">Subscribe to our monthly newsletter and be the first to learn about our forthcoming events.</div>
+            <form action="#">
+                <div>
+                    <input class="form-control" type="email" placeholder="your@email.com" name="email">
+                </div>
+                <input class="btn btn-default" type="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>
+    <!-- [/Subscribe to mailing list] -->
+</body>
+</html>

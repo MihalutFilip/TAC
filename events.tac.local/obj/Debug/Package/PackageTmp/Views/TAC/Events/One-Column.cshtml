@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+        <header class="page-header">
+            <div class="container">
+                @Html.Sitecore().Placeholder("pageHeader")
+            </div>
+        </header>
+        <section class="section section-full">
+            <div class="container">
+                <!-- [One Column] -->
+                <div class="row">
+                    <div class="col-md-12">
+                        @Html.Sitecore().Placeholder("pageContent")
+                    </div>
+                </div>
+                <!-- [/One Column] -->
+            </div>
+        </section>
+</body>
+</html>
